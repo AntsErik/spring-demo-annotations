@@ -1,5 +1,7 @@
 package com.luv2code.practises;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,7 +25,7 @@ public class BoxingCoach implements PractiseCoach {
 	// define a default constructor
 	public BoxingCoach() {
 		System.out.println(">> BoxingCoach: inside default constructor.");
-	}
+	}	
 	
 	@Override
 	public String getDailyWorkout() {
